@@ -12,8 +12,10 @@ class DummyTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function sayHello()
+    public function sayHelloFabien()
     {
-        $this->markTestIncomplete('TODO');
+        $expected = 'Hello Fabien';
+        $actual = Dummy::sayHello('Fabien');
+        $this->assertEquals($expected, $actual);
     }
 }

@@ -1,5 +1,6 @@
 <?php
 namespace Acme;
+
 /**
  * Dummy class
  *
@@ -7,5 +8,8 @@ namespace Acme;
  */
 class Dummy 
 {
-
+    static public function sayHello($name)
+    {
+        return 'Hello ' . $name;
+    }
 }

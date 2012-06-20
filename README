@@ -19,3 +19,8 @@ Create your test under "tests" directory.
 Create your code under "src" directory.
 
 $ phpunit -c tests/
+
+If you use Netbeans PHP, configure in 
+Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
+
+You should remove "Acme" namespace ;)
