@@ -8,7 +8,10 @@ PSR-0
 Install
 =======
 
-$ git clone https://github.com/isidromerayo/skeleton_PHP_project
+$ git clone https://github.com/isidromerayo/skeleton_PHP_project 
+OR
+$ git clone git@bitbucket.org:isidromerayo/skeleton_php_project.git
+
 $ curl -s http://getcomposer.org/installer | php
 $ php composer.phar install
 
