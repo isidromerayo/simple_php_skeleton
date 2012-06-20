@@ -1,0 +1,21 @@
+Simple Skeleton PHP project: Composer and Symfony2 components
+=============================================================
+
+A simple skeleton PHP project, using composer and Symfon2 Components.
+
+PSR-0
+
+Install
+=======
+
+$ git clone https://github.com/isidromerayo/skeleton_PHP_project
+$ curl -s http://getcomposer.org/installer | php
+$ php composer.phar install
+
+Using
+=====
+
+Create your test under "tests" directory.
+Create your code under "src" directory.
+
+$ phpunit -c tests/
