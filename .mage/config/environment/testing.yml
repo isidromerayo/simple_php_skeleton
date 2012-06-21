@@ -1,0 +1,11 @@
+#testing
+deployment:
+  user: dummy
+  from: ./
+  to: /var/www/vhosts/example.com/www
+  excludes:
+hosts:
+tasks:  pre-deploy:
+  on-deploy:
+    - deployment/rsync
+  post-deploy:
