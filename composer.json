@@ -1,5 +1,5 @@
 {
-    "name": "simple_skeleton",
+    "name": "isidromerayo/simple_php_skeleton",
     "description": "Simple skeleton PHP project with Symfony2 components",
     "keywords": ["test","composer","helper","TDD","PHPUnit"],
     "homepage": "",
