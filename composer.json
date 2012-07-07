@@ -11,19 +11,13 @@
             "homepage": "https://github.com/isidromerayo"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/andres-montanez/Magallanes"
-        }
-    ],
     "require": {
-        "php":              ">=5.3.2",
+        "php": ">=5.3.2",
         "symfony/class-loader": "2.0.x-dev"
     },
-    "autoload" : {
-        "psr-0" : {
-            "Acme" : "src/"
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
         }
     }
 }
