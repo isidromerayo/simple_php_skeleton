@@ -3,6 +3,8 @@ Simple Skeleton PHP project: Composer and Symfony2 components
 
 A simple skeleton PHP project, using composer and Symfon2 Components.
 
+This branch you can use Mockery (https://github.com/padraic/mockery)
+
 PSR-0
 
 Install
