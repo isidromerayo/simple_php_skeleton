@@ -15,6 +15,11 @@ $ git clone https://bitbucket.org/isidromerayo/skeleton_php_project.git
 $ curl -s http://getcomposer.org/installer | php
 $ php composer.phar install
 
+If you install composer globally (http://getcomposer.org/doc/00-intro.md#globally),
+you should be use packagist :) (http://packagist.org/)
+
+$ composer create-project isidromerayo/simple_php_skeleton my_project_name
+
 Using
 =====
 
