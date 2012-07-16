@@ -32,3 +32,8 @@ If you use Netbeans PHP, configure in
 Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
 
 You should remove "Acme" namespace ;)
+
+Travis-CI
+=========
+"!https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png!":http://travis-ci.org/isidromerayo/simple_php_skeleton
+
