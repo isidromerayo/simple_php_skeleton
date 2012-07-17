@@ -35,7 +35,7 @@ $ phpunit -c tests/
 
 If you want to use EHER/PHPUnit
 
-$ vendor/EHER/PHPUnit/bin/phpunit -c tests/
+$ vendor/bin/phpunit -c tests/
 
 
 If you use Netbeans PHP, configure in 
