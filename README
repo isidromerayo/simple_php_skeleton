@@ -46,5 +46,5 @@ You should remove "Acme" namespace ;)
 Travis-CI
 =========
 
-"!https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png!":http://travis-ci.org/isidromerayo/simple_php_skeleton
+Status build: "!https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png!"
 
