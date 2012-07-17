@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/class-loader": "2.0.x-dev"
+        "symfony/class-loader": "2.0.x-dev",
+         "EHER/PHPUnit": "dev-master"
     },
     "autoload": {
         "psr-0": {

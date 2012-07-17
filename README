@@ -5,6 +5,11 @@ A simple skeleton PHP project, using composer and Symfon2 Components.
 
 PSR-0
 
+Add PHPUnit install using composer 
+
+https://github.com/EHER/phpunit-all-in-one
+
+
 Install
 =======
 
@@ -27,6 +32,11 @@ Create your test under "tests" directory.
 Create your code under "src" directory.
 
 $ phpunit -c tests/
+
+If you want to use EHER/PHPUnit
+
+$ vendor/EHER/PHPUnit/bin/phpunit -c tests/
+
 
 If you use Netbeans PHP, configure in 
 Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
