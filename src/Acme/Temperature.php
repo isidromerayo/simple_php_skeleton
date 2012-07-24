@@ -3,24 +3,37 @@
 namespace Acme;
 
 /**
- * Description of Temperature
- *
- * @author isidromerayo
+ * Temperature 
+ * 
+ * @author isidromerayo <isidro.merayo@gmail.com>
  */
 class Temperature
 {
-  
-  public function __construct($service)
-  {
-    $this->_service = $service;
-  }
 
-  public function average()
-  {
-    $total = 0;
-    for ($i = 0; $i < 3; $i++) {
-      $total += $this->_service->readTemp();
+    private $_service;
+
+    /**
+     * Constructor 
+     * @param type $service
+     */
+    public function __construct($service)
+    {
+        $this->_service = $service;
     }
-    return $total / 3;
-  }
+
+    /**
+     * Calculate temperature's average
+     * @return integer
+     */
+    public function average()
+    {
+        $total = 0;
+        for ($i = 0; $i < 3; $i++) {
+            $total += $this->_service->readTemp();
+        }
+
+        return $total / 3;
+    }
+
 }
+
