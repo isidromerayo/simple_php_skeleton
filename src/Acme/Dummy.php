@@ -4,10 +4,16 @@ namespace Acme;
 /**
  * Dummy class
  *
- * @author isidromerayo
+ * @author isidromerayo <isidro.merayo@gmail.com>
  */
-class Dummy 
+class Dummy
 {
+    /**
+     * Say Hello + name
+     * @param string $name
+     * 
+     * @return type
+     */
     static public function sayHello($name)
     {
         return 'Hello ' . $name;
