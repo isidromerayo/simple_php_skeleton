@@ -1,5 +1,8 @@
 # https://github.com/github/gitignore
 
+# build - files generate with tools for static PHP code analyses
+build
+ 
 ## generic files to ignore
 *~
 *.lock
