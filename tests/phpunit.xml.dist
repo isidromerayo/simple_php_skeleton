@@ -4,8 +4,11 @@
     </testsuite>
 
     <filter>
-        <whitelist>
-            <directory suffix=".php">../src/</directory>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../src</directory>
+            <exclude>
+             <file>../src/bootstrap.php</file>
+            </exclude>
         </whitelist>
     </filter>
 </phpunit>
