@@ -25,6 +25,10 @@ you should be use packagist :) (http://packagist.org/)
 
 $ composer create-project isidromerayo/simple_php_skeleton my_project_name
 
+All-in-one (inspired by https://gist.github.com/cordoval :)
+
+$ curl -s https://raw.github.com/gist/3612021/c02c865ccc311f4293710282b7ef30cacce267d6/simple_php_skeleton.sh | sh
+
 Using
 =====
 
