@@ -3,6 +3,8 @@ Simple Skeleton PHP project: Composer and Symfony2 components
 
 A simple skeleton PHP project, using composer and Symfon2 Components.
 
+In this branch you can use Phake (https://github.com/mlively/Phake)
+
 PSR-0
 
 Add PHPUnit install using composer 
@@ -13,9 +15,9 @@ https://github.com/EHER/phpunit-all-in-one
 Install
 =======
 
-$ git clone https://github.com/isidromerayo/simple_php_skeleton
+$ git clone -b phake https://github.com/isidromerayo/simple_php_skeleton
 OR
-$ git clone https://bitbucket.org/isidromerayo/skeleton_php_project.git
+$ git clone -b phake https://bitbucket.org/isidromerayo/skeleton_php_project.git
 
 $ curl -s http://getcomposer.org/installer | php
 $ php composer.phar install
