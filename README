@@ -3,8 +3,6 @@ Simple Skeleton PHP project: Composer and Symfony2 components
 
 A simple skeleton PHP project, using composer and Symfon2 Components.
 
-In this branch you can use Phake (https://github.com/mlively/Phake)
-
 PSR-0
 
 Add PHPUnit install using composer 
