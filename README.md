@@ -7,10 +7,9 @@ In this branch you can use Phake (https://github.com/mlively/Phake)
 
 PSR-0
 
-Add PHPUnit install using composer 
+Now add PHPUnit install using composer
 
-https://github.com/EHER/phpunit-all-in-one
-
+http://packagist.org/packages/phpunit/phpunit
 
 Install
 =======
@@ -39,7 +38,7 @@ Create your code under "src" directory.
 
 $ phpunit -c tests/
 
-If you want to use EHER/PHPUnit
+If you want to use the vendor PHPUnit
 
 $ vendor/bin/phpunit -c tests/
 
@@ -47,7 +46,7 @@ To generate code coverage report (needs install xdebug extension)
 
 $ vendor/bin/phpunit
 
-or 
+If you want to use ant (and only phpunit task)
 
 $ ant phpunit
 
@@ -59,4 +58,4 @@ You should remove "Acme" namespace ;)
 Travis-CI
 =========
 
-Status build: https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=master
+Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=phake)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
