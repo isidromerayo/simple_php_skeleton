@@ -7,17 +7,17 @@ In this branch you can use Mockery (https://github.com/padraic/mockery)
 
 PSR-0
 
-Add PHPUnit install using composer 
+Now add PHPUnit install using composer 
 
-https://github.com/EHER/phpunit-all-in-one
+http://packagist.org/packages/phpunit/phpunit
 
 
 Install
 =======
 
-$ git clone -b phake https://github.com/isidromerayo/simple_php_skeleton
+$ git clone -b master https://github.com/isidromerayo/simple_php_skeleton
 OR
-$ git clone -b phake https://bitbucket.org/isidromerayo/skeleton_php_project.git
+$ git clone -b master https://bitbucket.org/isidromerayo/skeleton_php_project.git
 
 $ curl -s http://getcomposer.org/installer | php
 $ php composer.phar install
@@ -39,7 +39,7 @@ Create your code under "src" directory.
 
 $ phpunit -c tests/
 
-If you want to use EHER/PHPUnit
+If you want to use the vendor PHPUnit
 
 $ vendor/bin/phpunit -c tests/
 
@@ -47,7 +47,7 @@ To generate code coverage report (needs install xdebug extension)
 
 $ vendor/bin/phpunit
 
-or 
+If you want to use ant (and only phpunit task)
 
 $ ant phpunit
 
@@ -59,4 +59,4 @@ You should remove "Acme" namespace ;)
 Travis-CI
 =========
 
-Status build: https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=mockery
+Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=mockery)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
