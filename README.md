@@ -1,7 +1,7 @@
-Simple Skeleton PHP project: Composer and Symfony2 components
-=============================================================
+Simple Skeleton PHP project: Composer and other PHP Tools
+=========================================================
 
-A simple skeleton PHP project, using composer and Symfon2 Components.
+A simple skeleton PHP project, using composer and other tools like PHPUnit.
 
 PSR-0
 
@@ -35,6 +35,8 @@ Using
 Create your test under "tests" directory.
 Create your code under "src" directory.
 
+If you have install phpunit on your system
+
 $ phpunit -c tests/
 
 If you want to use the vendor PHPUnit
@@ -53,6 +55,20 @@ If you use Netbeans PHP, configure in
 Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
 
 You should remove "Acme" namespace ;)
+
+Autotest
+========
+
+You can autotest on save file, but you need ruby and some gems.
+
+$ gem install guard guard-phpunit
+$ gem install --version '~> 0.8.8' rb-inotify
+
+Send notify to OS, I test on GNU/Linux Ubuntu 12.04 (gnome shell).
+
+The project page: https://github.com/Maher4Ever/guard-phpunit. Guard::PHPUnit automatically runs your tests.
+There is a problem, you need install phpunit in your system but a PR solve this problem https://github.com/Maher4Ever/guard-phpunit/pull/7.
+
 
 Travis-CI
 =========
