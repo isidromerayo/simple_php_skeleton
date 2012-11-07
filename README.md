@@ -5,10 +5,13 @@ A simple skeleton PHP project, using composer and other tools like PHPUnit.
 
 PSR-0
 
-Now add PHPUnit install using composer 
+Now add PHPUnit install using composer.
 
 http://packagist.org/packages/phpunit/phpunit
 
+[2012-10-07] add a  Dependency Injection Container for PHP (Pimple)
+
+http://pimple.sensiolabs.org/
 
 Install
 =======
@@ -37,13 +40,7 @@ Create your code under "src" directory.
 
 If you have install phpunit on your system
 
-$ phpunit -c tests/
-
-If you want to use the vendor PHPUnit
-
-$ vendor/bin/phpunit -c tests/
-
-To generate code coverage report (needs install xdebug extension)
+If you want to use the vendor PHPUnit, to generate code coverage report (needs install xdebug extension)
 
 $ vendor/bin/phpunit
 
@@ -51,8 +48,14 @@ If you want to use ant (and only phpunit task)
 
 $ ant phpunit
 
-If you use Netbeans PHP, configure in 
-Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
+If you use Netbeans PHP, configure in
+
+Project properties -> sources -> Test Folder: tests
+
+Project properties -> PHPUnit -> Use XML Configuration: select from root phpunit.xml.dist (generate code coverage)
+or
+Project properties -> PHPUnit -> Use bootstrap: select tests/TestHelper.pho
+(Alt + F6 to run)
 
 You should remove "Acme" namespace ;)
 

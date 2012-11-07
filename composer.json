@@ -13,8 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/class-loader": "2.0.x-dev",
-        "phpunit/phpunit": "3.7.x-dev"
+        "phpunit/phpunit": "3.7.x-dev",
+        "pimple/pimple": "dev-master"
     },
     "autoload": {
         "psr-0": {
