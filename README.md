@@ -36,19 +36,13 @@ Using
 Create your test under "tests" directory.
 Create your code under "src" directory.
 
-$ phpunit -c tests/
+$ phpunit
 
 If you want to use the vendor PHPUnit
 
-$ vendor/bin/phpunit -c tests/
-
-To generate code coverage report (needs install xdebug extension)
-
 $ vendor/bin/phpunit
 
-If you want to use ant (and only phpunit task)
-
-$ ant phpunit
+To generate code coverage report (needs install xdebug extension)
 
 If you use Netbeans PHP, configure in 
 Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
