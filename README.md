@@ -16,6 +16,8 @@ Notes
 
 Change vendor/bin to bin
 Change "require" to "require-dev"
+Add "suggest" to install XDebug
+Update gist 
 
 [2012-10-07] 
 
@@ -33,12 +35,12 @@ $ git clone -b master https://bitbucket.org/isidromerayo/skeleton_php_project.gi
 You need install composer (http://getcomposer.org/)
 
 $ curl -s http://getcomposer.org/installer | php
-$ php composer.phar install
+$ php composer.phar install --dev
 
 If you install composer globally (http://getcomposer.org/doc/00-intro.md#globally),
 you should be use packagist :) (http://packagist.org/)
 
-$ composer create-project isidromerayo/simple_php_skeleton my_project_name
+$ composer create-project isidromerayo/simple_php_skeleton my_project_name --dev
 
 All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
@@ -66,15 +68,6 @@ $ bin/phpunit -c phpunit-codecoverage.xml.dist
 
 $ ant phpunit-codecoverage
 
-If you use Netbeans PHP, configure in
-
-Project properties -> sources -> Test Folder: tests
-
-Project properties -> PHPUnit -> Use XML Configuration: select from root phpunit.xml.dist (generate code coverage)
-or
-Project properties -> PHPUnit -> Use bootstrap: select tests/TestHelper.pho
-(Alt + F6 to run)
-
 You should remove "Acme" namespace ;)
 
 Autotest
@@ -89,8 +82,10 @@ Send notify to OS, I test on GNU/Linux Ubuntu 12.04 (gnome shell).
 
 $ ruby --version
 ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+
 $ gem --version
 1.8.23
+
 $ gem list
 
 *** LOCAL GEMS ***
