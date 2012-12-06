@@ -15,9 +15,12 @@ Notes
 [2012-12-06] 
 
 Change vendor/bin to bin
+
 Change "require" to "require-dev"
+
 Add "suggest" to install XDebug
-Update gist 
+
+Update gist
 
 [2012-10-07] 
 
@@ -44,7 +47,7 @@ $ composer create-project isidromerayo/simple_php_skeleton my_project_name --dev
 
 All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
-$ curl -s https://raw.github.com/gist/3612021/c02c865ccc311f4293710282b7ef30cacce267d6/simple_php_skeleton.sh | sh
+$ curl -s https://raw.github.com/gist/3612021/272f75c0f8fe76008c6c2f4c124aa35d7182f728/simple_php_skeleton.sh | sh
 
 Using
 =====
