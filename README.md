@@ -62,6 +62,10 @@ $ ant phpunit
 
 Too use code coverage you need install XDebug extension (http://xdebug.org/)
 
+$ bin/phpunit -c phpunit-codecoverage.xml.dist
+
+$ ant phpunit-codecoverage
+
 If you use Netbeans PHP, configure in
 
 Project properties -> sources -> Test Folder: tests
