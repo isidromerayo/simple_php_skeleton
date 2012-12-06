@@ -52,7 +52,7 @@ nbproject
 *.pydevproject
 .project
 .metadata
-bin/**
+bin/phpunit
 tmp/**
 tmp/**/*
 *.tmp
