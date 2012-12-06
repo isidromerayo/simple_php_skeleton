@@ -9,7 +9,17 @@ Now add PHPUnit install using composer.
 
 http://packagist.org/packages/phpunit/phpunit
 
-[2012-10-07] add a  Dependency Injection Container for PHP (Pimple)
+Notes
+=====
+
+[2012-12-06] 
+
+Change vendor/bin to bin
+Change "require" to "require-dev"
+
+[2012-10-07] 
+
+Add a  Dependency Injection Container for PHP (Pimple)
 
 http://pimple.sensiolabs.org/
 
@@ -19,6 +29,8 @@ Install
 $ git clone -b master https://github.com/isidromerayo/simple_php_skeleton
 OR
 $ git clone -b master https://bitbucket.org/isidromerayo/skeleton_php_project.git
+
+You need install composer (http://getcomposer.org/)
 
 $ curl -s http://getcomposer.org/installer | php
 $ php composer.phar install
@@ -42,11 +54,13 @@ If you have install phpunit on your system
 
 If you want to use the vendor PHPUnit, to generate code coverage report (needs install xdebug extension)
 
-$ vendor/bin/phpunit
+$ bin/phpunit
 
 If you want to use ant (and only phpunit task)
 
 $ ant phpunit
+
+Too use code coverage you need install XDebug extension (http://xdebug.org/)
 
 If you use Netbeans PHP, configure in
 
@@ -68,6 +82,42 @@ $ gem install guard guard-phpunit
 $ gem install --version '~> 0.8.8' rb-inotify
 
 Send notify to OS, I test on GNU/Linux Ubuntu 12.04 (gnome shell).
+
+$ ruby --version
+ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+$ gem --version
+1.8.23
+$ gem list
+
+*** LOCAL GEMS ***
+
+archive-tar-minitar (0.5.2)
+bundler (1.2.1, 1.1.4)
+childprocess (0.3.6)
+coderay (1.0.8)
+erubis (2.7.0)
+ffi (1.1.5)
+guard (1.5.3)
+guard-phpunit (0.1.4)
+i18n (0.6.1)
+json (1.5.4)
+libnotify (0.8.0)
+listen (0.5.3)
+log4r (1.1.10)
+lumberjack (1.0.2)
+method_source (0.8.1)
+net-scp (1.0.4)
+net-ssh (2.2.2)
+pry (0.9.10)
+rake (0.9.2.2)
+rb-inotify (0.8.8)
+rubygems-bundler (1.1.0, 1.0.3)
+rvm (1.11.3.5)
+slop (3.3.3)
+thor (0.16.0)
+vagrant (1.0.5)
+watchr (0.7)
+
 
 The project page: https://github.com/Maher4Ever/guard-phpunit. Guard::PHPUnit automatically runs your tests.
 There is a problem, you need install phpunit in your system but a PR solve this problem https://github.com/Maher4Ever/guard-phpunit/pull/7.

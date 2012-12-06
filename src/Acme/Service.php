@@ -3,7 +3,7 @@
 namespace Acme;
 /**
  *
- * @author isidromerayo
+ * @author isidromerayo <isidro.merayo@gmail.com>
  */
 interface Service
 {

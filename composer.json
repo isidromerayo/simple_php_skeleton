@@ -22,6 +22,6 @@
         }
     },
     "config": {
-        "bin-dir": "vendor/bin"
+        "bin-dir": "bin"
     }
 }
