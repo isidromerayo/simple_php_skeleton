@@ -90,6 +90,8 @@ $ bin/launch_seleniumrc.sh
 
 $ bin/phpunit
 
+You should read the test API https://github.com/sebastianbergmann/phpunit-selenium/blob/master/Tests/Selenium2TestCaseTest.php
+
 Autotest
 ========
 
