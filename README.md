@@ -12,6 +12,10 @@ http://packagist.org/packages/phpunit/phpunit
 Notes
 =====
 
+[2012-12-07]
+
+Add Selenium RC and test demo
+
 [2012-12-06] 
 
 Change vendor/bin to bin
@@ -49,6 +53,10 @@ All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
 $ curl -s https://raw.github.com/gist/3612021/272f75c0f8fe76008c6c2f4c124aa35d7182f728/simple_php_skeleton.sh | sh
 
+### Update
+
+$ composer.phar update --dev
+
 Using
 =====
 
@@ -72,6 +80,15 @@ $ bin/phpunit -c phpunit-codecoverage.xml.dist
 $ ant phpunit-codecoverage
 
 You should remove "Acme" namespace ;)
+
+Functional test with Selenium RC
+================================
+
+First you launch Selenium RC (require Java 1.5+)
+
+$ bin/launch_seleniumrc.sh
+
+$ bin/phpunit
 
 Autotest
 ========

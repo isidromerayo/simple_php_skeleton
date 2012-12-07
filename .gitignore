@@ -75,3 +75,6 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+# Idea
+.idea
