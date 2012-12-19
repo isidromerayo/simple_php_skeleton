@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./TestHelper.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         strict="true"
+         colors="true"
+         verbose="true">
+  <testsuites>
+    <testsuite name="skeleton_php_project">
+        <directory suffix="Test.php">.</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

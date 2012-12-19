@@ -11,6 +11,10 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+[2012-12-19]
+
+Change autoload to PSR-0 in src/
+Reorganize phpunit.xml files and ant task
 
 [2012-12-07]
 
@@ -67,7 +71,7 @@ If you have install phpunit on your system
 
 If you want to use the vendor PHPUnit, to generate code coverage report (needs install xdebug extension)
 
-$ bin/phpunit
+$ bin/phpunit -c tests
 
 If you want to use ant (and only phpunit task)
 
@@ -77,7 +81,7 @@ Too use code coverage you need install XDebug extension (http://xdebug.org/)
 
 $ bin/phpunit -c phpunit-codecoverage.xml.dist
 
-$ ant phpunit-codecoverage
+$ ant 
 
 You should remove "Acme" namespace ;)
 
