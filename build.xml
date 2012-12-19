@@ -3,6 +3,7 @@
 
 <project name="skeleton_php_project" default="build" basedir=".">
  <property name="source" value="src"/>
+ <property name="tests" value="tests"/>
 
  <target name="clean" description="Clean up and create artifact directories">
   <delete dir="${basedir}/build/coverage"/>
@@ -12,14 +13,14 @@
  </target>
 
  <target name="phpunit" description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
-  <exec executable="bin/phpunit" failonerror="true"/>
+     <exec executable="${basedir}/bin/phpunit" failonerror="true" dir="${basedir}/${tests}">
+  </exec>
  </target>
 
  <target name="phpunit-codecoverage" description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
-  <exec executable="bin/phpunit" failonerror="true">
-      <arg line="-c ${basedir}/phpunit-codecoverage.xml.dist"/>
+     <exec executable="bin/phpunit" failonerror="true">
+         <arg line="-c ${basedir}/${tests}/phpunit-codecoverage.xml.dist" />
   </exec>
  </target>
- <target name="build" depends="clean,phpunit"/>
- <!-- <target name="build" depends="clean,phpunit-codecoverage"/>-->
+ <target name="build" depends="clean,phpunit-codecoverage"/>
 </project>
