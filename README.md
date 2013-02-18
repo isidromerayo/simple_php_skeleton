@@ -11,6 +11,12 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+
+[2013-02-18]
+
+Remove functional test because we need minimal enviroment to kata(yunos).
+Selenium RC will be another project (skeleton_PHP_testing)
+
 [2012-12-19]
 
 Change autoload to PSR-0 in src/
@@ -51,7 +57,7 @@ $ php composer.phar install --dev
 If you install composer globally (http://getcomposer.org/doc/00-intro.md#globally),
 you should be use packagist :) (http://packagist.org/)
 
-$ composer create-project isidromerayo/simple_php_skeleton my_project_name --dev
+$ composer(.phar) create-project isidromerayo/simple_php_skeleton my_project_name --dev
 
 All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
@@ -59,7 +65,7 @@ $ curl -s https://raw.github.com/gist/3612021/272f75c0f8fe76008c6c2f4c124aa35d71
 
 ### Update
 
-$ composer.phar update --dev
+$ composer(.phar) update --dev
 
 Using
 =====
@@ -84,17 +90,6 @@ $ bin/phpunit -c phpunit-codecoverage.xml.dist
 $ ant 
 
 You should remove "Acme" namespace ;)
-
-Functional test with Selenium RC
-================================
-
-First you launch Selenium RC (require Java 1.5+)
-
-$ bin/launch_seleniumrc.sh
-
-$ bin/phpunit
-
-You should read the test API https://github.com/sebastianbergmann/phpunit-selenium/blob/master/Tests/Selenium2TestCaseTest.php
 
 Autotest
 ========

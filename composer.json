@@ -16,9 +16,7 @@
         "pimple/pimple": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.x-dev",
-        "phpunit/phpunit-selenium": ">=1.2",
-        "claylo/selenium-server-standalone": "dev-master"
+        "phpunit/phpunit": "3.7.x-dev"
     },
     "suggest": {
         "ext/xdebug": "Debugger and profiling"
