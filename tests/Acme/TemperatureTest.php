@@ -13,7 +13,7 @@ class TemperatureTest extends \PHPUnit_Framework_TestCase
      */
     public function simpleMock()
     {
-        $service = $this->getMock('Acme\Service', array('readTemp'));
+        $service = $this->getMock('Acme\ServiceInterface', array('readTemp'));
         $service->expects($this->any())
             ->method('readTemp')
             ->will($this->onConsecutiveCalls(10,12,14));

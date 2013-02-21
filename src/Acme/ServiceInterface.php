@@ -6,7 +6,7 @@ namespace Acme;
  *
  * @author isidromerayo <isidro.merayo@gmail.com>
  */
-interface Service
+interface ServiceInterface
 {
     /**
      * Read temperature
