@@ -16,7 +16,8 @@
         "pimple/pimple": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.x-dev"
+        "phpunit/phpunit": "3.7.x-dev",
+        "sensiolabs/security-checker": "dev-master"
     },
     "suggest": {
         "ext/xdebug": "Debugger and profiling"

@@ -53,6 +53,7 @@ nbproject
 .project
 .metadata
 bin/phpunit
+bin/security-checker
 tmp/**
 tmp/**/*
 *.tmp

@@ -11,6 +11,9 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+[2013-02-20]
+
+Add "Security Advisories Checker" https://security.sensiolabs.org/
 
 [2013-02-18]
 
