@@ -42,7 +42,9 @@ app/config/parameters.yml
 ##
 # Netbeans
 ##
-nbproject
+# insight say: "User specific files should not appear in .gitignore"
+# nbproject
+
 
 
 ##
@@ -50,8 +52,8 @@ nbproject
 ##
 
 *.pydevproject
-.project
-.metadata
+#.project
+#.metadata
 bin/phpunit
 bin/security-checker
 tmp/**
@@ -78,4 +80,4 @@ local.properties
 .buildpath
 
 # Idea
-.idea
+# .idea
