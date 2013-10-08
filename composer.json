@@ -18,6 +18,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.x-dev",
+        "phpunit/DbUnit": "1.2.*",
+        "ext-sqlite3": "*",
         "sensiolabs/security-checker": "dev-master"
     },
     "suggest": {
