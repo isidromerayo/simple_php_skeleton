@@ -11,6 +11,10 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+[2013-10-09]
+
+Restructure to divide test into: unit, integration and functional
+
 [2013-02-20]
 
 Add "Security Advisories Checker" https://security.sensiolabs.org/
