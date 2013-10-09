@@ -15,6 +15,10 @@ Notes
 =====
 [2013-10-09]
 
+Script post install to remove .git
+
+[2013-10-08]
+
 Restructure to divide test into: unit, integration and functional
 
 [2013-02-20]

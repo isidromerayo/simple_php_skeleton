@@ -31,6 +31,9 @@
             "": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": ["echo [NOTICE] Deleting all .git dirs inside project", "rm -rf .git"]
+    },
     "config": {
         "bin-dir": "bin"
     }
