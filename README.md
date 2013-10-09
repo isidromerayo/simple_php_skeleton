@@ -1,35 +1,76 @@
-Simple Skeleton PHP project: Composer and Symfony2 components
-=============================================================
+Simple Skeleton PHP project: Composer and other PHP Tools
+=========================================================
 
-A simple skeleton PHP project, using composer and Symfon2 Components.
+A simple skeleton PHP project, using composer and other tools like PHPUnit.
 
 In this branch you can use Mockery (https://github.com/padraic/mockery)
 
 PSR-0
 
-Now add PHPUnit install using composer 
+Now add PHPUnit install using composer.
 
 http://packagist.org/packages/phpunit/phpunit
 
+Notes
+=====
+[2013-10-09]
+
+Restructure to divide test into: unit, integration and functional
+
+[2013-02-20]
+
+Add "Security Advisories Checker" https://security.sensiolabs.org/
+
+[2013-02-18]
+
+Remove functional test because we need minimal enviroment to kata(yunos).
+Selenium RC will be another project (skeleton_PHP_testing)
+
+[2012-12-19]
+
+Change autoload to PSR-0 in src/
+Reorganize phpunit.xml files and ant task
+
+[2012-12-07]
+
+Add Selenium RC and test demo
+
+[2012-12-06] 
+
+Change vendor/bin to bin
+
+Change "require" to "require-dev"
+
+Add "suggest" to install XDebug
+
+Update gist
+
+[2012-10-07] 
+
+Add a  Dependency Injection Container for PHP (Pimple)
+
+http://pimple.sensiolabs.org/
 
 Install
 =======
 
-$ git clone -b master https://github.com/isidromerayo/simple_php_skeleton
-OR
-$ git clone -b master https://bitbucket.org/isidromerayo/skeleton_php_project.git
+You need install composer (http://getcomposer.org/)
 
 $ curl -s http://getcomposer.org/installer | php
-$ php composer.phar install
+$ php composer.phar install --dev
 
 If you install composer globally (http://getcomposer.org/doc/00-intro.md#globally),
 you should be use packagist :) (http://packagist.org/)
 
-$ composer create-project isidromerayo/simple_php_skeleton my_project_name
+$ composer(.phar) create-project isidromerayo/simple_php_skeleton my_project_name --dev
 
 All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
-$ curl -s https://raw.github.com/gist/3612021/c02c865ccc311f4293710282b7ef30cacce267d6/simple_php_skeleton.sh | sh
+$ curl -s https://raw.github.com/gist/3612021/272f75c0f8fe76008c6c2f4c124aa35d7182f728/simple_php_skeleton.sh | sh
+
+### Update
+
+$ composer(.phar) update --dev
 
 Using
 =====
@@ -37,22 +78,19 @@ Using
 Create your test under "tests" directory.
 Create your code under "src" directory.
 
-$ phpunit -c tests/
+To run all test
 
-If you want to use the vendor PHPUnit
-
-$ vendor/bin/phpunit -c tests/
-
-To generate code coverage report (needs install xdebug extension)
-
-$ vendor/bin/phpunit
+$ bin/phpunit -c tests
 
 If you want to use ant (and only phpunit task)
 
 $ ant phpunit
 
-If you use Netbeans PHP, configure in 
-Project properties -> sources -> Test Folder: tests (Alt + F6 to run)
+Too use code coverage you need install XDebug extension (http://xdebug.org/)
+
+$ bin/phpunit -c phpunit-codecoverage.xml.dist
+
+$ ant 
 
 You should remove "Acme" namespace ;)
 

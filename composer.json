@@ -1,7 +1,7 @@
 {
     "name": "isidromerayo/simple_php_skeleton",
     "description": "Simple skeleton PHP project with Symfony2 components",
-    "keywords": ["test","composer","Helper","TDD","PHPUnit","Mock/Stub","xUnit"],
+    "keywords": ["test", "composer", "Helper", "TDD", "PHPUnit", "Test Doubles", "Mock", "Stub", "xUnit"],
     "homepage": "",
     "type": "library",
     "license": "MIT",
@@ -13,16 +13,25 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/class-loader": "2.0.x-dev",
+        "pimple/pimple": "1.*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
         "phpunit/phpunit": "3.7.x-dev",
-        "mockery/mockery": "dev-master"
+        "mockery/mockery": "dev-master",
+        "phpunit/DbUnit": "1.2.*",
+        "ext-sqlite3": "*",
+        "sensiolabs/security-checker": "dev-master"
+    },
+    "suggest": {
+        "ext/xdebug": "Debugger and profiling"
     },
     "autoload": {
         "psr-0": {
-            "Acme": "src/"
+            "": "src/"
         }
     },
     "config": {
-        "bin-dir": "vendor/bin"
+        "bin-dir": "bin"
     }
 }
