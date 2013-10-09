@@ -3,6 +3,8 @@ Simple Skeleton PHP project: Composer and other PHP Tools
 
 A simple skeleton PHP project, using composer and other tools like PHPUnit.
 
+In this branch you can use Mockery (https://github.com/padraic/mockery)
+
 PSR-0
 
 Now add PHPUnit install using composer.
@@ -95,4 +97,4 @@ You should remove "Acme" namespace ;)
 Travis-CI
 =========
 
-Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
+Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=mockery)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
