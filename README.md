@@ -13,6 +13,10 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+[2013-10-10]
+
+Add Phake (Test Doubles) to composer.json and autotest with Guard PHPUnit2 (gem).
+
 [2013-10-09]
 
 Script post install to remove .git
@@ -66,7 +70,7 @@ $ php composer.phar install --dev
 If you install composer globally (http://getcomposer.org/doc/00-intro.md#globally),
 you should be use packagist :) (http://packagist.org/)
 
-$ composer(.phar) create-project isidromerayo/simple_php_skeleton my_project_name --dev
+$ composer(.phar) create-project isidromerayo/simple_php_skeleton my_project_name
 
 All-in-one install and check (inspired by https://gist.github.com/cordoval :)
 
@@ -74,7 +78,7 @@ $ curl -s https://raw.github.com/gist/3612021/272f75c0f8fe76008c6c2f4c124aa35d71
 
 ### Update
 
-$ composer(.phar) update --dev
+$ composer(.phar) update
 
 Using
 =====
@@ -98,7 +102,42 @@ $ ant
 
 You should remove "Acme" namespace ;)
 
+Autotest
+========
+
+Note: Test on Ubuntu 12.04 (Gnome Shell and XFCE)
+
+You can try to autotest with Guard PHPUnit2
+
+$ gem install guard-phpunit2
+
+To launch, simple:
+
+$ guard
+
+The configuration file is Guardfile :)
+
+More info https://github.com/ramon/guard-phpunit2
+
+
 Travis-CI
 =========
 
 Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=mockery)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
+
+
+References
+==========
+
+PHPUnit: 
+    
+    http://phpunit.de/manual/current/en/index.html
+
+Mockery: 
+
+    https://github.com/padraic/mockery
+
+Phake: 
+
+    https://github.com/mlively/Phake
+    http://phake.digitalsandwich.com/docs/html/

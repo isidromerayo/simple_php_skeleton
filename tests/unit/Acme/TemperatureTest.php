@@ -21,8 +21,18 @@ class TemperatureTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function simpleMockWithMockery()
     {
-        $service = \Mockery::mock('Acme\Service');
+        $service = \Mockery::mock('Acme\ServiceInterface');
         $service->shouldReceive('readTemp')->times(3)->andReturn(10, 12, 14);
+        $temperature = new Temperature($service);
+        $this->assertEquals(12, $temperature->average());
+    }
+    /** @test */
+    public function simpleMockWithPhake()
+    {
+        $service = \Phake::mock('\Acme\ServiceInterface');
+        \Phake::when($service)->readTemp()->thenReturn(10)
+                                            ->thenReturn(12)
+                                            ->thenReturn(14);
         $temperature = new Temperature($service);
         $this->assertEquals(12, $temperature->average());
     }
