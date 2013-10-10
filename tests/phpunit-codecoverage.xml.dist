@@ -10,6 +10,9 @@
       <directory suffix="Test.php">.</directory>
     </testsuite>
   </testsuites>
+  <listeners>
+    <listener class="\Mockery\Adapter\Phpunit\TestListener"></listener>
+  </listeners>
   <logging>
       <log type="coverage-html" target="../build/coverage" title="skeleton PHP project"
          charset="UTF-8" yui="true" highlight="true"
