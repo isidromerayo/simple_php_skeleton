@@ -1,6 +1,3 @@
-before_commands:
-    - "composer install --prefer-source"
-
 filter:
  excluded_paths: [vendor/*]
 
@@ -14,7 +11,3 @@ tools:
      command: phploc
      excluded_dirs: [vendor]
      enabled: true
- php_code_coverage: true
-     # A phpunit.xml/phpunit.xml.dist is expected in tests/
-     test_command: bin/phpunit -c tests/phpunit-codecoverage.xml.dist
-
