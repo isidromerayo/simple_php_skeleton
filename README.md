@@ -3,8 +3,6 @@ Simple Skeleton PHP project: Composer and other PHP Tools
 
 A simple skeleton PHP project, using composer and other tools like PHPUnit.
 
-In this branch you can use Mockery (https://github.com/padraic/mockery)
-
 PSR-0
 
 Now add PHPUnit install using composer.
@@ -13,6 +11,11 @@ http://packagist.org/packages/phpunit/phpunit
 
 Notes
 =====
+
+[2013-11-11]
+
+Add basic Scrutinizer (https://scrutinizer-ci.com/).
+
 [2013-10-10]
 
 Add Phake (Test Doubles) to composer.json and autotest with Guard PHPUnit2 (gem).
