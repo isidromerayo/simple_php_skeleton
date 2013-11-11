@@ -1,3 +1,6 @@
+before_commands:
+    - "composer install --prefer-source"
+
 filter:
  excluded_paths: [vendor/*]
 
