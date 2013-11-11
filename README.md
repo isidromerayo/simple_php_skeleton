@@ -125,6 +125,11 @@ Travis-CI
 
 Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_php_skeleton.png?branch=mockery)](http://travis-ci.org/isidromerayo/simple_php_skeleton)
 
+Scrutinizer
+==========
+
+Tools: scrutinizer-ci.com [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/badges/quality-score.png?s=fe47d20f43c2d317977f3094c33845a2727bf177)](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/)
+
 
 References
 ==========
