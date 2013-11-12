@@ -14,3 +14,6 @@ tools:
      command: phploc
      excluded_dirs: [vendor]
      enabled: true
+ php_code_coverage:
+        # A phpunit.xml/phpunit.xml.dist is expected in tests/
+     test_command: ./bin/phpunit -c tests/phpunit-codecoverage.xml.dist
