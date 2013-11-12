@@ -131,8 +131,9 @@ Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/simple_
 Scrutinizer
 ==========
 
-Tools: scrutinizer-ci.com [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/badges/quality-score.png?s=fe47d20f43c2d317977f3094c33845a2727bf177)](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/)
+Quality: [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/badges/quality-score.png?s=fe47d20f43c2d317977f3094c33845a2727bf177)](https://scrutinizer-ci.com/g/isidromerayo/simple_php_skeleton/)
 
+Code Coverage: [![Code Coverage](https://scrutinizer-ci.com/b/isidromerayo/skeleton_php_project/badges/coverage.png?s=79428d01806bfd9549178b5504a6688c5ca8b8b4)](https://scrutinizer-ci.com/b/isidromerayo/skeleton_php_project/)
 
 References
 ==========
