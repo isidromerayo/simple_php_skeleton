@@ -15,7 +15,7 @@
         <mkdir dir="${basedir}/build/pdepend"/>
     </target>
     <target description="Run unit tests using PHPUnit and generates junit.xml and clover.xml" name="phpunit">
-        <exec executable="phpunit" failonerror="true"/>
+        <exec executable="phpunit" failonerror="true" dir="${basedir}/${tests}"/>
     </target>
     <target description="Run the pdepend, phpmd, phpcpd, phpcs, phpdoc and phploc tasks in parallel using a maximum of 2 threads." name="parallelTasks">
         <parallel threadCount="2">

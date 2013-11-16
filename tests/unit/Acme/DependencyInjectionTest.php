@@ -22,7 +22,7 @@ class DependencyInjectionTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals('value',$this->di['param']);
     }
-    /* @test */
+    /** @test */
     public function dummy() {
         $this->assertTrue(TRUE);
     }

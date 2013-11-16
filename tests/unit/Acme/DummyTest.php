@@ -15,7 +15,7 @@ class DummyTest extends \PHPUnit_Framework_TestCase
     public function sayHelloFabien()
     {
         $expected = 'Hello Fabien';
-        $actual = Dummy::sayHello('Fabien');
+        $actual = \Acme\Dummy::sayHello('Fabien');
         $this->assertEquals($expected, $actual);
     }
 }
