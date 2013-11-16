@@ -8,22 +8,17 @@ namespace Acme;
  */
 class DependencyInjectionTest extends \PHPUnit_Framework_TestCase
 {
-    /*
     public function setUp()
     {
         $this->di = new \Pimple();
         $this->di['param'] = 'value';
     }
-     */
     /**
-     * @todo
+     * @test
      */
     public function initialParamValue()
     {
         $this->assertEquals('value',$this->di['param']);
     }
-    /** @test */
-    public function dummy() {
-        $this->assertTrue(TRUE);
-    }
+
 }
