@@ -101,7 +101,7 @@ Too use code coverage you need install XDebug extension (http://xdebug.org/)
 
 $ bin/phpunit -c phpunit-codecoverage.xml.dist
 
-$ ant 
+$ ant -f build-composer.xml
 
 You should remove "Acme" namespace ;)
 
