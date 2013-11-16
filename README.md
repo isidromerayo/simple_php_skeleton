@@ -12,6 +12,10 @@ http://packagist.org/packages/phpunit/phpunit
 Notes
 =====
 
+[2013-11-16]
+
+Add template to Jenkins CI http://jenkins-php.org/
+
 [2013-11-11]
 
 Add basic Scrutinizer (https://scrutinizer-ci.com/).
