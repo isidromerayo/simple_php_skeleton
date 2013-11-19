@@ -6,12 +6,12 @@ namespace Acme;
  *
  * @author isidromerayo
  */
-class TemperatureTest extends \PHPUnit_Framework_TestCase
+class TemperatureStubTest extends \PHPUnit_Framework_TestCase
 {
     /** @test */
-    public function simpleMockWithPHPUnit()
+    public function simpleStubWithPHPUnit()
     {
-        $service = $this->getMock('Acme\ServiceInterface', array('readTemp'));
+        $service = $this->getMock('\Acme\ServiceInterface', array('readTemp'));
         $service->expects($this->any())
             ->method('readTemp')
             ->will($this->onConsecutiveCalls(10,12,14));
@@ -19,15 +19,15 @@ class TemperatureTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(12, $temperature->average());
     }
     /** @test */
-    public function simpleMockWithMockery()
+    public function simpleStubWithMockery()
     {
-        $service = \Mockery::mock('Acme\ServiceInterface');
+        $service = \Mockery::mock('\Acme\ServiceInterface');
         $service->shouldReceive('readTemp')->times(3)->andReturn(10, 12, 14);
         $temperature = new Temperature($service);
         $this->assertEquals(12, $temperature->average());
     }
     /** @test */
-    public function simpleMockWithPhake()
+    public function simpleStubWithPhake()
     {
         $service = \Phake::mock('\Acme\ServiceInterface');
         \Phake::when($service)->readTemp()->thenReturn(10)
