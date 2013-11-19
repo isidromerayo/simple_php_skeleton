@@ -20,7 +20,7 @@ class PointOfSaleMockTest  extends \PHPUnit_Framework_TestCase {
         $pointOfSale = new \Acme\Dobles\PointOfSale($catalog, $screen);
 
         // verificar
-        $catalog->expects($this->once())->method('search')->with('12');
+        $catalog->expects($this->once())->method('search')->with('123');
                 
         $pointOfSale->onBarcode('123');
     }
