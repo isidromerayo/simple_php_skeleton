@@ -12,6 +12,12 @@ http://packagist.org/packages/phpunit/phpunit
 Notes
 =====
 
+[2013-11-19]
+
+Example test doubles: Stubs and Mocks
+Add Selenium RC Server
+Listener to calculate time execution (https://gist.github.com/isidromerayo/5115136)
+
 [2013-11-16]
 
 Add template to Jenkins CI http://jenkins-php.org/
@@ -103,9 +109,24 @@ $ ant phpunit
 
 Too use code coverage you need install XDebug extension (http://xdebug.org/)
 
-$ bin/phpunit -c phpunit-codecoverage.xml.dist
+$ bin/phpunit -c tests/phpunit-codecoverage.xml.dist
 
 $ ant -f build-composer.xml
+
+All test
+--------
+
+Require: WebDriver 
+
+By default minimal enviroment (unit + integration), to launch "complete" with Selenium the steps:
+
+1) Launch Selenium RC Server 
+
+$ bin/launch_selenium.sh (execution permission: chmod +x bin/launch_selenium.sh )
+
+2) Launch test with custom configuration phpunit file (another terminal window)
+
+$ bin/phpunit -c tests/phpunit-complete.xml.dist
 
 You should remove "Acme" namespace ;)
 
@@ -154,3 +175,7 @@ Phake:
 
     https://github.com/mlively/Phake
     http://phake.digitalsandwich.com/docs/html/
+
+Selenium Extension:
+
+    https://github.com/sebastianbergmann/phpunit-selenium/blob/master/Tests/Selenium2TestCaseTest.php

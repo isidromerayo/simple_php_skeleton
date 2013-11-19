@@ -12,6 +12,7 @@
   </testsuites>
   <listeners>
     <listener class="\Mockery\Adapter\Phpunit\TestListener"></listener>
+    <listener class="SimpleTestListener" file="./SimpleTestListener.php"/>
   </listeners>
   <logging>
       <log type="coverage-html" target="../build/coverage" title="skeleton PHP project"

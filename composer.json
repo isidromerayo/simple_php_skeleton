@@ -22,7 +22,9 @@
         "phake/phake": "1.*",
         "phpunit/DbUnit": "1.2.*",
         "ext-sqlite3": "*",
-        "sensiolabs/security-checker": "dev-master"
+        "sensiolabs/security-checker": "dev-master",
+        "phpunit/phpunit-selenium": ">=1.2",
+        "claylo/selenium-server-standalone": "dev-master"
     },
     "suggest": {
         "ext/xdebug": "Debugger and profiling"
