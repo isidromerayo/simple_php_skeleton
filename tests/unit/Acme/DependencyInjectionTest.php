@@ -20,5 +20,4 @@ class DependencyInjectionTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals('value',$this->di['param']);
     }
-
 }

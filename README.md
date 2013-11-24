@@ -12,6 +12,10 @@ http://packagist.org/packages/phpunit/phpunit
 Notes
 =====
 
+[2013-11-24]
+
+Add hot-phpunit-runner for autotest using PHP, try to remove guard-phpunit2
+
 [2013-11-19]
 
 Example test doubles: Stubs and Mocks
@@ -134,6 +138,15 @@ Autotest
 ========
 
 Note: Test on Ubuntu 12.04 (Gnome Shell and XFCE)
+
+hot-phpunit-runner
+------------------
+
+$ bin/hot-phpunit-runner --config=tests/phpunit.xml.dist --watch --notify
+
+
+Guard PHPUnit2
+--------------
 
 You can try to autotest with Guard PHPUnit2
 

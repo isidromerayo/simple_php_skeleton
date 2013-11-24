@@ -24,7 +24,8 @@
         "ext-sqlite3": "*",
         "sensiolabs/security-checker": "dev-master",
         "phpunit/phpunit-selenium": ">=1.2",
-        "claylo/selenium-server-standalone": "dev-master"
+        "claylo/selenium-server-standalone": "dev-master",
+        "hot/phpunit-runner": "dev-master"
     },
     "suggest": {
         "ext/xdebug": "Debugger and profiling"
