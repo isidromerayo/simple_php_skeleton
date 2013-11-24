@@ -14,9 +14,11 @@ Notes
 
 [2013-11-24]
 
-Add hot-phpunit-runner for autotest using PHP, try to remove guard-phpunit2
+Test hot-phpunit-runner for autotest using PHP, try to remove guard-phpunit2
 
 https://github.com/slavahatnuke/hot-phpunit-runner
+
+hot/phpunit-runner dev-master requires php >=5.4.0, but skeleton_php_project requires >=5.3.3
 
 [2013-11-19]
 
