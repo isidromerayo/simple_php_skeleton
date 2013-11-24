@@ -16,6 +16,8 @@ Notes
 
 Add hot-phpunit-runner for autotest using PHP, try to remove guard-phpunit2
 
+https://github.com/slavahatnuke/hot-phpunit-runner
+
 [2013-11-19]
 
 Example test doubles: Stubs and Mocks
@@ -144,6 +146,7 @@ hot-phpunit-runner
 
 $ bin/hot-phpunit-runner --config=tests/phpunit.xml.dist --watch --notify
 
+More info https://github.com/slavahatnuke/hot-phpunit-runner
 
 Guard PHPUnit2
 --------------
