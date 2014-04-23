@@ -2,7 +2,7 @@
     "name": "isidromerayo/simple_php_skeleton",
     "description": "Simple skeleton PHP project with Symfony2 components",
     "keywords": ["test", "composer", "Helper", "TDD", "PHPUnit", "Test Doubles", "Mock", "Stub", "xUnit"],
-    "homepage": "",
+    "homepage": "https://github.com/isidromerayo/simple_php_skeleton/",
     "type": "library",
     "license": "MIT",
     "authors": [
