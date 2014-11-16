@@ -15,6 +15,7 @@ class MyGuestbookTest extends \PHPUnit_Extensions_Database_TestCase
         $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, 
                               \PDO::ERRMODE_EXCEPTION);
         $this->pdo->prepare("CREATE TABLE IF NOT EXISTS 'guestbook' (id int, content text, user text, created datetime)")->execute();
+        parent::setUp();
         
     }
     /**
@@ -33,9 +34,12 @@ class MyGuestbookTest extends \PHPUnit_Extensions_Database_TestCase
     }
     
     public function testNoGetDataSet() {
-        // FIXME WTF!?
         $result = $this->getConnection()->getConnection()->query("SELECT * FROM guestbook")->fetchAll();
-        $this->assertEquals(0, sizeof($result));
+        $this->assertEquals(2, sizeof($result));
+        $this->assertArrayHasKey('id',$result[0]);
+        $this->assertArrayHasKey('content',$result[0]);
+        $this->assertArrayHasKey('user',$result[0]);
+        $this->assertArrayHasKey('created',$result[0]);
     }
 
 }
