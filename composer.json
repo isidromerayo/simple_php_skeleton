@@ -13,25 +13,26 @@
     ],
     "require": {
         "php": ">=5.4.3",
-        "pimple/pimple": "1.*",
+        "pimple/pimple": "1.1.1",
         "ext-curl": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.x-dev",
         "mockery/mockery": "dev-master",
         "phake/phake": "1.*",
-        "phpunit/DbUnit": "1.2.*",
         "ext-sqlite3": "*",
-        "sensiolabs/security-checker": "dev-master",
+        "phpunit/dbunit": ">=1.2",
         "phpunit/phpunit-selenium": ">=1.2",
-        "claylo/selenium-server-standalone": "dev-master",
+        "facebook/webdriver": "dev-master",
+        "edysanchez/selenium-server": "dev-master",
+        "sensiolabs/security-checker": "dev-master",
         "hot/phpunit-runner": "dev-master"
     },
     "suggest": {
         "ext/xdebug": "Debugger and profiling"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "": "src/"
         }
     },
