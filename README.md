@@ -12,6 +12,20 @@ http://packagist.org/packages/phpunit/phpunit
 Notes
 =====
 
+[2015-01-27]
+
+Remove selenium server, you should be add in composer.json dependency
+
+```
+"edysanchez/selenium-server": "dev-master",
+```
+
+To launch selenium server 
+
+```
+bin/selenium-server.jar
+```
+
 [2013-11-24]
 
 Test hot-phpunit-runner for autotest using PHP, try to remove guard-phpunit2
@@ -124,13 +138,13 @@ $ ant -f build-composer.xml
 All test
 --------
 
-Require: WebDriver 
+Require: WebDriver and add selenium server dependency ("edysanchez/selenium-server": "dev-master",)
 
 By default minimal enviroment (unit + integration), to launch "complete" with Selenium the steps:
 
 1) Launch Selenium RC Server 
 
-$ bin/launch_selenium.sh (execution permission: chmod +x bin/launch_selenium.sh )
+$ bin/selenium-server.jar
 
 2) Launch test with custom configuration phpunit file (another terminal window)
 
@@ -141,7 +155,7 @@ You should remove "Acme" namespace ;)
 Autotest
 ========
 
-Note: Test on Ubuntu 12.04 (Gnome Shell and XFCE)
+Note: Test on Ubuntu 12.04/14.04 (Gnome Shell and XFCE)
 
 hot-phpunit-runner
 ------------------
