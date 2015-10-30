@@ -7,7 +7,8 @@
          verbose="true">
   <testsuites>
     <testsuite name="skeleton_php_project">
-      <directory suffix="Test.php">.</directory>
+      <directory suffix="Test.php">unit</directory>
+      <directory suffix="Test.php">integration</directory>
     </testsuite>
   </testsuites>
   <listeners>

@@ -4,7 +4,7 @@ class SimpleTestListener implements \PHPUnit_Framework_TestListener
 {
     public function endTest(\PHPUnit_Framework_Test $test, $time)
     {
-        printf("Test '%s' terminado y ha tardado %s segundos " . PHP_EOL,
+        printf("Test '%s' finish. Time %s seconds " . PHP_EOL,
            get_class($test) . '=>' . $test->getName(),
            number_format($time,3)
         );
